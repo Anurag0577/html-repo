@@ -1,0 +1,407 @@
+<!-- -------------------------------------- BASIC -------------------------------------------------- -->
+
+<!-- HTML - Hyper text Markup Language 
+
+ 1. used to create the structers of websites and its contents.
+ 2. the components used to design the structure of the website is called tags.
+ 3. HTML files end with .html or .htm (extension)
+ 4. index.html is the homepage of the website, backend search for this file and make this homepage file.
+ 5. html tag is the parent of the head and body tag.
+ 6. most of the html elements have opening tag and closing tag.
+ 7. some element do not have closing tag. and there is no content between them eg. <br>
+ 8. comments are not render by the browser.
+ 9. html is not case sensitive. <html> and <HTML> is same.
+-->
+
+<!-- This code is called Boiler plate code.
+"emmit abreviation" -->
+<!DOCTYPE html> 
+<!-- the whole tag is saying, The document you are writing is of HTML type.
+And the !DOCTYPE is telling you are writting a which version of HTML, here you are using HTML5 -->
+<html lang="en"> 
+<!-- This is the starting element , biggest element and root of the html document -->
+<head> 
+<!-- Container of metadata((userful data) that you do not need to show on the webpage, you just need to tell these things to the code -->
+    <meta charset="UTF-8">
+    <!-- <meta charset="UTF-8">: This meta tag specifies the character encoding for the document, which is UTF-8 in this case. UTF-8 is a 
+        widely used character encoding that supports a wide range of characters from various languages. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- used for making web pages responsive to different screen sizes. 
+        It sets the initial scale to 1.0 and adjusts the page's width to the device width -->
+    <title>Document</title>
+    <!-- tag defines the title of the HTML document, which appears in the browser's title bar or tab. -->
+</head>
+<body> 
+<!-- Container of Things that are actually desplay on the webpage. -->
+    <h1>HELLO WORLD</h1>
+    <p>This is the paragraph.</p>
+</body>
+</html>
+
+<!-- HTML Tag -- A container for some content or other HTML tags.
+<p>This is the paragraph</p> (middle one is content)(first and last one is elements.)  -->
+
+
+<!-- -----------------------------------ATTRIBUTE-----------------------------------------------
+
+1. used to add more information in the tag.
+eg. <html lang="en"> meaning the language that i am using to write the html code is english. -->
+
+
+<!-- -----------------------------------HEADING / PARAGRAPH----------------------------------------- -->
+<!-- 
+1. used to print headings
+2. don't use heading 1, 2, 3 for large medium and small text. 
+3. headings are basically for showing the importance. During SEO heading are useful.
+
+4. <p></p> is use for paragraph. -->
+<body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <p>This is paragraph used to print headings 2. don't use heading 1, 2, 3 for large medium and small text. 3. headings are basically for showing the importance. During SEO heading are useful.</p> 
+    <!-- using "toggle word wrap" to display long line in a single page. -->
+</body>
+
+
+<!-- ---------------------------------ANCHOR TAG----------------------------------------- -->
+<!-- 
+1. write using <a></a>
+2. used to add links to your page.
+3. href is the attribute. -->
+
+<!-- -- adding external/absolute links to your pages -->
+<a href = https://www.google.com/ >google</a> 
+
+<!-- -- adding internal links to your page< -->
+<a href =  practise.html>google</a>
+
+<!-- If you want when you click on the link, the link should be open the new tab. -->
+<a href = https://www.google.com/ target = "_main">Google</a>
+
+<!-- We can also make our image clickable. -->
+<a href = "https://www.google.com/" target=" _main">
+    <img src = "demo.png" alt = "google_logo"
+</a>
+
+
+<!-- --------------------------------- IMAGE TAG ----------------------------------------- -->
+
+<!-- 1. write using <img scr="" alt=""></img>
+     2. you can also add external internet link in the source and also internal links -->
+
+<img src = "demo.png" alt="google_logo">
+<br/>
+<img src = "https://avatars.githubusercontent.com/u/94917640?v=4" alt="anurag" hight="100" width = "90">
+
+
+
+
+<!-- ------------------------------ Bold, Italic & Underline TAG ---------------------------------- -->
+<!-- Bold -->
+<b>Bold</b>
+
+<!-- Italic -->
+<i>Italic</i>
+
+<!-- Unerline -->
+<u>Underline</u>
+
+
+<!-- ---------------------------------- BIG & SMALL TAG -------------------------------------- -->
+
+    <!-- Print bigger size text. -->
+    <big>HEllo DOsto</big> 
+    
+    <!-- print small size text. -->
+    <small>Namaskar dosto</small>
+    
+
+<!-- -------------------------------- HR(horizontal rular) TAG -------------------------------- -->
+
+<!-- 
+1. used to display a horizontal rular and also to seperate content. Basically use to print horizontal line.
+2. write using <hr> -->
+
+    <big>HEllo DOsto</big>
+    <hr/>
+    <small>Namaskar dosto</small>
+
+
+<!-- -------------------------------- SUBSCRIPT & SUPERSCRIPT TAG --------------------------------- -->
+
+<!-- 1. lets say you want to write h20 or NH4 in proper way , in this condition you can use 'subscript tag' or '-->
+    <!-- subscript -->
+    <p>H<sub>2</sub>O</p> 
+    <br/>
+    <!-- superscript -->
+    <p>x<sup>n</sup></p>
+
+
+<!-- ------------------------------------ <p> vs <pre> TAG ------------------------------- -->
+<!-- 
+1.lets say you write a paragrph which have so many nextline and spaces in it, so what html do is it remove all the line and the space and print it as a single line, html did this by default.
+
+2. If You do not want html do this, you can use <pre></pre> instead <p></p> -->
+
+<pre>This is paragraph <b>used to print headings</b> 2. don't use<u> heading 1, 2, 3 for large medium and</u> s
+    mall text. 3. head                      ings are basically for s
+    howing the importance. During SEO heading are useful.
+</pre>
+
+
+
+<!-- ------------------------------------ SEMENTIC TAG ------------------------------- -->
+
+provide context and describe the type of content they enclose. Using semantic tags helps make your HTML code more understandable, accessible, and SEO-friendly. Here are some commonly used semantic HTML5 tags:
+
+<header> 
+<!-- it's used to define the top section of a webpage, which may include a site logo, site title, and primary navigation. -->
+
+<nav>: 
+<!-- It's used to define menus, navigation bars, or other collections of links that guide users through the website. -->
+
+<main>: 
+<!-- Represents the main content of the document. There should be only one <main> element per page, and it's typically the central focus of the page's content. -->
+
+<article>: 
+<!-- Represents a self-contained composition in a document, such as a blog post, news article, or a forum post. Each <article> should make sense on its own and can be distributed or syndicated independently. -->
+
+<section>: 
+<!-- Defines a thematic grouping of content within a document. It helps organize content into logical sections, and each <section> may have its own heading. -->
+
+<aside>: 
+<!-- Represents content that is tangentially related to the content around it. It's often used for sidebars, advertisements, or content like pull quotes. -->
+
+<figure> and <figcaption>: 
+<!-- <figure> is used to encapsulate media, such as images, videos, or diagrams, along with their captions provided using <figcaption>. This pairing helps associate captions with their respective media elements. -->
+
+<footer>: 
+<!-- Represents the footer of a section or page. It typically contains information about the author, copyright details, contact information, or links to related documents. -->
+
+<time>: 
+<!-- Specifies a specific time or a range of time. It can be used to mark up dates, times, or durations. It's especially useful for events, blog posts with publication dates, or event schedules. -->
+
+<mark>: 
+<!-- Indicates text that has been highlighted or marked for reference within the context of the page. It's often styled with a yellow background by default in browsers. -->
+
+<details> and <summary>: 
+<!-- <details> creates a disclosure widget that can be toggled to show or hide additional information. <summary> is used to provide a label or title for the <details> element. -->
+
+
+    
+<!-- ------------------------------------ DIV TAG ------------------------------------ -->
+
+<!-- 
+In HTML, the <div> element is a non-semantic container that is used to group and structure 
+content on a web page. The name "div" stands for "division," and it is often used as a generic container 
+for organizing and styling content. Unlike semantic HTML elements like <header>, <article>, or 
+<footer> that convey meaning about the content they contain, the <div> element does not carry any 
+inherent meaning on its own. 
+-->
+
+<!-- 
+Block Tag : Block elements are those elements who take the full width of the webpage. 
+-->
+<!--
+Inline Tag : Inline elements are those element who take only enough space.
+-->
+
+
+    
+<!-- ------------------------------------ SPAN TAG ------------------------------------ -->
+<!-- 
+If we want elements does not take whole width but use only that much they actually needed.
+In this case we use <span></span> -->
+
+
+
+<!-- ------------------------------------ LIST IN HTML------------------------------------ -->
+
+<!-- 
+you can create lists using several elements, each serving a different purpose and suitable for 
+various types of content. There are three main types of lists in HTML: ordered lists, unordered 
+lists, and definition lists. -->
+
+<!-- 
+Ordered Lists (<ol>) - Ordered lists are used when you want to create a list with items in a specific 
+order or sequence, typically using numbers or letters. Each list item is marked with a number or 
+letter by default. Here's an example: -->
+
+<ol>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+</ol>
+
+<!-- 
+This code will render as:
+First item
+Second item
+Third item -->
+
+
+<!-- 
+Unordered Lists (<ul>) - Unordered lists are used when you want to create a list with items that 
+don't have a specific order or sequence. Each list item is marked with a bullet point by default. 
+Here's an example: -->
+
+<ul>
+  <li>Apples</li>
+  <li>Oranges</li>
+  <li>Bananas</li>
+</ul>
+<!-- 
+This code will render as:
+Apples
+Oranges
+Bananas -->
+
+<!-- 
+Definition Lists (<dl>, <dt>, <dd>) - Definition lists are used to define terms and their corresponding 
+definitions. They consist of three main parts:
+
+<dl> (Definition List) - The container for the entire list.
+<dt> (Definition Term) - Represents the term or item being defined.
+<dd> (Definition Description) - Represents the description or definition of the term.
+
+Here's an example: -->
+<dl>
+  <dt>HTML</dt>
+  <dd>Hypertext Markup Language</dd>
+  <dt>CSS</dt>
+  <dd>Cascading Style Sheets</dd>
+</dl>
+<!-- 
+This code will render as:
+HTML
+    Hypertext Markup Language
+CSS
+    Cascading Style Sheets -->
+
+<!-- You can also create list in the List: -->
+<ol>
+    <li>First item</li>
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+    <li>Second item</li>
+    <li>Third item</li>
+</ol>
+<ul>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+</ul>
+
+
+<!-- ------------------------------------ TABLES IN HTML------------------------------------ -->
+
+<!-- Tables in HTML are used to organize and display data in a structured grid format, 
+consisting of rows and columns. The primary elements used to create tables in HTML 
+are <table>, <tr>, <th>, and <td></td> -->
+<table>
+    <caption>Table Heading</caption>
+    <thead>
+        <tr>
+           <th colspan="2">Product</th>
+           <!-- if you want to print single heading that cover multiple columns, then you can use colspen in the
+            header and can also define how many column it going to cover. -->
+           <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+           <td>Apples</td>
+           <td>$1.00</td>
+        </tr>
+        <tr>
+           <td>Oranges</td>
+           <td>$0.75</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<!-- ------------------------------------ FORM IN HTML------------------------------------ -->
+
+1. used to collect information from the user like login, registration, contect me, some other data etc.
+2. you can form like raio, checkbox, textarea etc. 
+
+<form action="where this form data is going.">
+    <input type="text" placeholder="username">
+    <input type="password" placeholder="password">
+    <!-- creating radio buttons: -->
+    <label for = "101">
+    <input type="radio" value="class XI" name="class" id="101">classXI
+    </label> 
+    <label for = "202">
+    <input type="radio" value="class X" name="class">classX
+    </label>
+
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+<body>
+    <h1>Sample Form</h1>
+    <form action="submit.php" method="post">
+        <label for="text">Text Input:</label>
+        <input type="text" id="text" name="text" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <label for="checkbox">Interests:</label>
+        <input type="checkbox" id="sports" name="interests[]" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests[]" value="music">
+        <label for="music">Music</label><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+        </select><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+</form>
+     
+
+
+<!-- ------------------------------------ IFRAME TAG IN HTML------------------------------------ -->
+<!-- 
+The <iframe> (short for "inline frame") tag in HTML is used to embed another web page or document 
+within the current web page. It allows you to display content from an external source, such as 
+another website, a video, a map, or a document, within a specific section of your webpage. -->
+
+<iframe src="URL" width="width" height="height" frameborder="0" scrolling="auto"></iframe>
+
+
+<!-- ------------------------------------ IFRAME TAG------------------------------------ -->
+<!-- 
+The <video> tag in HTML is used to embed video content directly into a web page. 
+It allows you to display video files such as MP4, WebM, and Ogg, as well as provide a 
+fallback for browsers that do not support video playback. -->
+
+<video  width="width" height="height" src="video.mp4" controls loop >MYvIDEO</video>
+ 
